@@ -1,0 +1,3 @@
+# open-science
+
+practising nextflow
