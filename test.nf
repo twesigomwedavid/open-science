@@ -1,6 +1,6 @@
 
 
-input_ch = Channel.fromPath(params.in_pat) //define in_pat in config file 
+input_ch = Channel.fromPath(params.data_dir) //define data_dir in config file 
 
 
 process split_by_chrom {
