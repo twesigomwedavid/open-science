@@ -1,6 +1,6 @@
 
 
-input_ch = Channel.fromPath(params.in_pat) 
+input_ch = Channel.fromPath(params.in_pat) //define in_pat in config file 
 
 
 process split_by_chrom {
@@ -19,4 +19,6 @@ process split_by_chrom {
 
 }
 
-splitbams_ch.subscribe {println "$it"}
+//splitbams_ch.subscribe {println "$it"}
+
+// All chr specific bams are now grouped by sample name in splitbams_ch and can be used in next processes
